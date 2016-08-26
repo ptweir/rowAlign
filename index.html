@@ -9,6 +9,16 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>rowAlign</title>
+        <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-72213326-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </head>
 
   <body>
@@ -17,7 +27,7 @@
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/ptweir/rowAlign">View on GitHub</a>
-
+          <a id="breadcrumbs_banner" href="http://ptweir.github.io/">ptweir home</a><a id="breadcrumbs_child" href="http://ptweir.github.io/rowAlign/">rowAlign</a>
           <h1 id="project_title">rowAlign</h1>
           <h2 id="project_tagline">Scripts to fix row offsets in data acquired using two-way scanning microscopes</h2>
 
@@ -32,9 +42,13 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
+<a id="purpose" class="anchor" href="#purpose" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Purpose</h3>
+<p>This is a simple script aimed at fixing offets between rows acquired on galvo scanning microscopes in two-way mode. It has been tested on data collected using a ThorLabs microscope. In the ThorImage software, these offsets are call "2-way-align." ThorImage only offers integer pixel corrections, whereas this script allows for sub-pixel alignment. Included is an example t-series to demonstrate the functionality. At a python prompt, type <code>run -i example_usage.py</code> to see it in action. The following figure demonstrates the results. Note the vertical structure on the right side of the image that becomes clearer after alignment.</p>
 
-<p>use to fix 2-way alignment</p>
+<img src="images/figure.png" width="100%" />
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<p>Written by Peter Weir (<a href="https://github.com/ptweir" class="user-mention">@ptweir</a>) in 2016 for use in <a href="http://dickinsonlab.caltech.edu/people/peter-weir/">Michael Dickinson's laboratory</a>.</p>
       </section>
     </div>
 

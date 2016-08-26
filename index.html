@@ -43,7 +43,12 @@
       <section id="main_content" class="inner">
         <h3>
 <a id="purpose" class="anchor" href="#purpose" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Purpose</h3>
-<p>This is a simple script aimed at fixing offets between rows acquired on galvo scanning microscopes in two-way mode. It has been tested on data collected using a ThorLabs microscope. In the ThorImage software, these offsets are call "2-way-align." ThorImage only offers integer pixel corrections, whereas this script allows for sub-pixel alignment. Included is an example t-series to demonstrate the functionality. At a python prompt, type <code>run -i example_usage.py</code> to see it in action. The following figure demonstrates the results. Note the vertical structure on the right side of the image that becomes clearer after alignment.</p>
+<p>This is a simple script aimed at fixing offets between rows acquired on galvo scanning microscopes in two-way mode. It has been tested on data collected using a ThorLabs microscope. In the ThorImage software, these offsets are called Two Way Alignment:</p>
+<img src="images/thorImageRowAlign.png" />
+<p>If you forget to set the Two Way Alignment during your imaging session, this script can correct the alignment. Also, ThorImage only offers integer pixel corrections, whereas this script allows for sub-pixel alignment.</p>
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
+<p>Included is an example t-series to demonstrate the functionality. At a python prompt, type <code>run -i example_usage.py</code> to see it in action. The following figure demonstrates the results. Note the vertical structure on the right side of the image that becomes clearer after alignment.</p>
 
 <img src="images/figure.png" width="100%" />
 <h3>
